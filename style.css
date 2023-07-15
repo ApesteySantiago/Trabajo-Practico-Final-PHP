@@ -1,0 +1,805 @@
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 65px; /* Altura deseada del encabezado */
+    padding: 0 20px; /* Espaciado interno deseado */
+    background-color: #353a40; /* Color de fondo deseado */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra deseada */
+    z-index: 9999; /* Asegura que el encabezado esté en la capa superior */
+    padding: 0 70px;
+    
+}
+
+/* ---------------------------- */
+/*        Menu superior */
+/* ---------------------------- */
+
+.menu-chico{
+    display: none;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+  
+nav li {
+    margin-left: 20px;
+    flex-basis: calc(33.33% - 10px);
+    white-space: nowrap; /* Evita que el texto se divida en varias líneas */
+    margin-bottom: 10px;
+}
+
+nav a {
+    text-decoration: none; /* quita el subrayado */
+    color: #fff; /* cambia el color de los enlaces a blanco */
+}
+
+.icono {
+    display: flex;
+    align-items: center;
+}
+  
+.icono img {
+    height: 50px; /* Altura deseada de la imagen */
+    margin-right: 10px; /* Espaciado entre la imagen y el label */
+}
+
+label {
+    color: #ffffff;
+}
+
+.compra a {
+    color: #289e42;
+}
+
+.inactivo a {
+    color: #929697;
+}
+
+/* ---------------------------- */
+/*        Slide de Fotos */
+/* ---------------------------- */
+
+.carousel {
+    width: 100%; /* Cambiar 800px al ancho deseado */
+    margin: 0 auto; /* Para centrar horizontalmente el carrusel */
+    margin-top: -40px;
+    z-index: 0;
+  }
+
+.carousel-item {
+    height: 100%; /* Cambiar 400px a la altura deseada */
+}
+
+.filtro {
+    filter: brightness(0.4);
+}
+
+.carousel-caption {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(14%, -15%);
+    z-index: 1;
+    color: #fff;
+    text-align: right;
+}
+
+.btn-green {
+    background-color: #28a745;
+    border-color: #28a745;
+    color: #fff;
+  }
+
+.btn-transparent {
+    background-color: transparent;
+    color: white;
+    border-color: white;
+  }
+  
+/* ---------------------------- */
+/*      Seccion Oradores */
+/* ---------------------------- */
+
+#oradores {
+    background-color: #ffffff;
+    width: 100%;
+    height: auto;
+}
+
+.container {
+    margin: 5%;
+}
+
+.row {
+    justify-content: center;
+}
+  
+.col-sm-4 {
+    padding: 10px;
+}
+
+.steve {
+    width: 420px; 
+    height: auto;
+}
+
+.reajuste {
+    border-radius: 10px ;
+}
+
+.epigrafe {
+    padding-top: 5px;
+    border: 1px #e0e0e0 solid;
+}
+
+.box {
+    display: inline-block;
+    padding: 5px;
+    margin: 20px;
+    margin-bottom: 0;
+    border-radius: 5px;
+    color: white;
+}
+  
+.yellow {
+    margin-right: 0;
+    padding-inline-start: 4px;
+    padding-top: 0;
+    padding-bottom: 1px;
+    background-color: #ffc107;
+    color: black;
+    font-size: 12px;
+}
+  
+.blue {
+    margin-left: 0;
+    padding-inline-start: 4px;
+    padding-top: 0;
+    padding-bottom: 1px;
+    background-color: #17a2b7;
+    font-size: 12px;
+}
+
+.gray {
+    margin-left: 20px;
+    padding-inline-start: 4px;
+    padding-top: 0;
+    padding-bottom: 1px;
+    background-color: #6d747d;
+    font-size: 12px;
+}
+
+.red {
+    margin-left: -20px;
+    padding-inline-start: 4px;
+    padding-top: 0;
+    padding-bottom: 1px;
+    background-color: #db3545;
+    font-size: 12px;
+}
+
+.titulo {
+    margin: 20px;
+    margin-top: 0;
+    text-align: left;
+    font-size: 21px;
+    font-weight: 600;
+}
+
+.parrafo {
+    text-align: left;
+    margin: 20px 20px;
+}
+
+/* ---------------------------- */
+/*    Seccion "Lugar y Fecha" */
+/* ---------------------------- */
+
+#lugar {
+    width: 100%;
+}
+#lugar1{
+    display: none;
+}
+
+.content {
+    display: flex;
+    align-items: top;
+    margin-bottom: 20px;
+    background-color: #353a40;
+  }
+  
+.honolulu {
+    width: 50%;
+    height: auto;
+    margin-right: 15px;
+    float: left;
+  }
+  
+h2 {
+    color: #ffffff;
+    font-size: 24px;
+    font-weight: 500;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  
+.sinopsis {
+    color: #ffffff;
+    font-size: 15px;
+    line-height: 1.5;
+    margin: 0;
+    margin-bottom: 15px;
+}
+/* ---------------------------- */
+/*    Formulario para Orador */
+/* ---------------------------- */
+.container-orador {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+.prim {
+    font-size: 14px;
+    margin-bottom: 0px;
+}
+
+.secun {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+  
+.terce {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+  
+form {
+    max-width: 100%;
+    margin: 0;
+}
+  
+form label {
+    font-size: 18px;
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+form input[type="text"], form textarea {
+    font-size: 16px;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+  }
+  
+form input[type="submit"] {
+    font-size: 16px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #96c93e;
+    color: #fff;
+    cursor: pointer;
+  }
+
+.submit {
+    width: 100% ;
+    background-color: #96c93e ;
+    color: #ffffff;
+    margin-bottom: 25px;
+
+}
+
+.content-form {
+    display: flex;
+    align-items: top;
+    margin-bottom: 10px;
+}
+
+.nom {
+    width: 50%;
+    margin-left: 0px;
+}
+
+.last {
+    width: 50%;
+    padding-left: 25px;
+}
+
+.msg {
+    width: 100%; 
+    margin-top: 5px;
+    margin-bottom: 5px;
+    
+}
+
+.postdata {
+    text-align: left;
+    margin-bottom: 30px;
+    color: #707e88;;
+
+}
+/* ---------------------------- */
+/*        Pie de pagina */
+/* ---------------------------- */
+footer {
+    background: linear-gradient(to right, #1c3846, #1e5371);
+    width: 100%;
+    height: 80px;
+    padding-top: 25px;
+    padding-left: 60px;
+    padding-right: 50px;
+}
+
+.enlaces{
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 50%;
+}
+
+.pie {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: justify;
+}
+  
+.elemento {
+    margin: 0 ;
+    width: 70px;
+    text-align: end;
+    line-height: 1.2;
+}
+  
+.elem {
+    margin: 0px;
+    margin-top: 10px;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 12px;
+}
+
+/* ---------------------------- */
+/*        Configuracion Menú */
+/* ---------------------------- */
+
+@media screen and (min-width: 1441px) {
+    .row{
+        margin-left: 10%;
+        padding-left: 20%;
+    }
+    .prim1{
+        margin-top: -80px;
+        margin-left: 10%;
+        padding-left: 20%;
+    }
+    .secun2{
+        margin-left: 10%;
+        padding-left: 20%;
+    }
+  }
+
+@media (max-width: 768px){
+    header{
+        padding: 10;
+        font-size: 11px;
+    }
+
+    .intro{
+        width: 300px;
+        height: 80px;
+        padding: 0;
+        margin-top: 0;
+        margin-left: -30px;
+        font-size: 12px;
+    }
+
+    .btn-transparent{
+        margin: -10px;
+        font-size: 10px;
+        transform: translate(-15px, 20px);
+
+    }
+    .btn-green{
+        margin: 0;
+        font-size: 10px;
+        transform: translate(0px, 20px);
+    }
+
+    .btn-move{
+        transform: translate(10px, -10px);
+    }
+
+    .nom{
+        margin-left: 10px;
+    }
+    .last{
+        width: 60%;
+        margin-right: 10px;
+    }
+
+    .msg{
+        width: 94%;
+        margin-left: 10px;
+    }
+    .postdata{
+        margin-left: 10px ;
+    }
+
+    .submit{
+        width: 94%;
+    }
+   
+}
+
+@media (max-width: 425px){
+    
+    header{
+        padding: 0;
+        margin: 0;
+        width: 425px;
+    }
+    .label-menu{
+        width: 50px;
+    }
+    .menu{
+        display: none;
+    }
+    .menu-chico{
+        display: block;
+
+        margin-left: 20px;
+        margin-right: 20px;
+        text-decoration: none;
+        list-style: none;
+    }
+    .menu.chi {
+        font-size: 50px;
+    }
+
+    .carousel-item{
+        height: 100%;
+    }
+
+    .carousel-caption{
+        font-size: 10px;
+    }
+    .filtro{
+        width: 320px;
+        height: 320px;
+    }
+    .carousel-control-prev-icon, .carousel-control-next-icon{
+        display: none;
+    }
+    h1{
+        font-size: 15px;
+    }
+    .intro{
+        width: 300px;
+        height: 80px;
+        padding: 0;
+        margin-top: 0;
+        margin-left: -150px;
+        font-size: 10px;
+    }
+    .btn-transparent{
+        margin: -10px;
+        font-size: 10px;
+        transform: translate(-120px);
+
+    }
+    .btn-green{
+        margin: 0;
+        font-size: 10px;
+        transform: translate(-10px, -21px);
+    }
+
+    .row{
+        transform: translate(-20px);
+    }
+
+    #lugar{
+        display: none;
+    }
+
+    #lugar1{
+        display: block;
+        background-color: #353a40;
+    }
+
+    .honolulu{
+        width: 100%;
+        float: none;
+    }
+
+    .conten{
+        margin-left: 10px;
+    }
+
+    .btn-sabermas{
+        transform: translate(10px, -10px);
+    }
+
+    .nom{
+        margin-left: 10px;
+    }
+    .last{
+        width: 60%;
+        margin-right: 10px;
+    }
+
+    .msg{
+        width: 94%;
+        margin-left: 10px;
+    }
+    .postdata{
+        margin-left: 10px ;
+    }
+
+    .submit{
+        width: 94%;
+    }
+
+    footer{
+        padding: 0;
+        margin: 0;
+    }
+
+    .pie{
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width: 375px){
+    
+    header{
+        padding: 0;
+        margin: 0;
+        width: 375px;
+    }
+    .label-menu{
+        width: 50px;
+    }
+    .menu{
+        display: none;
+    }
+    .menu-chico{
+        display: block;
+
+        margin-left: 20px;
+        margin-right: 20px;
+        text-decoration: none;
+        list-style: none;
+    }
+    .menu.chi {
+        font-size: 50px;
+    }
+
+    .carousel-item{
+        height: 100%;
+    }
+
+    .carousel-caption{
+        font-size: 10px;
+    }
+    .filtro{
+        width: 320px;
+        height: 320px;
+    }
+    .carousel-control-prev-icon, .carousel-control-next-icon{
+        display: none;
+    }
+    h1{
+        font-size: 15px;
+    }
+    .intro{
+        width: 300px;
+        height: 80px;
+        padding: 0;
+        margin-top: 0;
+        margin-left: -175px;
+        font-size: 10px;
+    }
+    .btn-transparent{
+        margin: -10px;
+        font-size: 10px;
+        transform: translate(-120px);
+
+    }
+    .btn-green{
+        margin: 0;
+        font-size: 10px;
+        transform: translate(-10px, -21px);
+    }
+
+    .row{
+        transform: translate(-20px);
+    }
+
+    #lugar{
+        display: none;
+    }
+
+    #lugar1{
+        display: block;
+        background-color: #353a40;
+    }
+
+    .honolulu{
+        width: 100%;
+        float: none;
+    }
+
+    .conten{
+        margin-left: 10px;
+    }
+
+    .btn-sabermas{
+        transform: translate(10px, -10px);
+    }
+
+    .nom{
+        margin-left: 10px;
+    }
+    .last{
+        width: 60%;
+        margin-right: 10px;
+    }
+
+    .msg{
+        width: 94%;
+        margin-left: 10px;
+    }
+    .postdata{
+        margin-left: 10px ;
+    }
+
+    .submit{
+        width: 94%;
+    }
+
+    footer{
+        padding: 0;
+        margin: 0;
+    }
+
+    .pie{
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width: 320px){
+    
+    header{
+        padding: 0;
+        margin: 0;
+        width: 320px;
+    }
+    .label-menu{
+        width: 50px;
+    }
+    .menu{
+        display: none;
+    }
+    .menu-chico{
+        display: block;
+        margin-left: 20px;
+        margin-right: 20px;
+        text-decoration: none;
+        list-style: none;
+    }
+    .menu.chi {
+        font-size: 50px;
+    }
+
+    .carousel-item{
+        height: 100%;
+    }
+
+    .carousel-caption{
+        font-size: 10px;
+    }
+    .filtro{
+        width: 320px;
+        height: 320px;
+    }
+    .carousel-control-prev-icon, .carousel-control-next-icon{
+        display: none;
+    }
+    h1{
+        font-size: 15px;
+    }
+    .intro{
+        width: 300px;
+        height: 80px;
+        padding: 0;
+        margin-top: 0;
+        margin-left: -175px;
+        font-size: 10px;
+    }
+    .btn-transparent{
+        margin: -10px;
+        font-size: 10px;
+        transform: translate(-100px);
+
+    }
+    .btn-green{
+        margin: 0;
+        font-size: 10px;
+        transform: translate(10px, -21px);
+    }
+
+    .row{
+        transform: translate(-15px);
+    }
+
+    #lugar{
+        display: none;
+    }
+
+    #lugar1{
+        display: block;
+        background-color: #353a40;
+    }
+
+    .honolulu{
+        width: 100%;
+        float: none;
+    }
+
+    .conten{
+        margin-left: 10px;
+    }
+
+    .btn-sabermas{
+        transform: translate(10px, -10px);
+    }
+
+    .nom{
+        margin-left: 10px;
+    }
+    .last{
+        width: 60%;
+        margin-right: 10px;
+    }
+
+    .msg{
+        width: 94%;
+        margin-left: 10px;
+    }
+    .postdata{
+        margin-left: 10px ;
+    }
+
+    .submit{
+        width: 94%;
+    }
+
+    footer{
+        padding: 0;
+        margin: 0;
+    }
+
+    .pie{
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+}
+

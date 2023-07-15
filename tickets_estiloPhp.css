@@ -1,0 +1,147 @@
+body{
+    font-family: sans-serif;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 65px; /* Altura deseada del encabezado */
+    padding: 0 20px; /* Espaciado interno deseado */
+    background-color: #353a40; /* Color de fondo deseado */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra deseada */
+    z-index: 9999; /* Asegura que el encabezado esté en la capa superior */
+    padding: 0 70px;
+    
+}
+
+/* ---------------------------- */
+/*        Menu superior */
+/* ---------------------------- */
+
+.menu-chico{
+    display: none;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+  
+nav li {
+    margin-left: 20px;
+    flex-basis: calc(33.33% - 10px);
+    white-space: nowrap; /* Evita que el texto se divida en varias líneas */
+    margin-bottom: 10px;
+}
+
+nav a {
+    text-decoration: none; /* quita el subrayado */
+    color: #fff; /* cambia el color de los enlaces a blanco */
+}
+
+.icono {
+    display: flex;
+    align-items: center;
+}
+  
+.icono img {
+    height: 50px; /* Altura deseada de la imagen */
+    margin-right: 10px; /* Espaciado entre la imagen y el label */
+}
+
+label {
+    color: #ffffff;
+}
+
+.compra a {
+    color: #289e42;
+}
+
+.inactivo a {
+    color: #929697;
+}
+
+/* ---------------------------- */
+/*          Tabla  */
+/* ---------------------------- */
+
+#titulo{
+    margin-top: 75px;
+    margin-left: 30%;
+}
+
+.tabla{
+    margin-left: 15%;
+    margin-bottom: 25px;
+}
+
+table {
+    border-collapse: collapse;
+    width: 80%;
+}
+th, td {
+    border: 0px solid black;
+    padding: 10px;
+    text-align: center;
+}
+
+#color{
+    background-color: #ecf3f3;
+}
+
+#aux{
+    border: black;
+    border-bottom: 2px solid black;
+    width: 80%;
+    margin: 10px 0;
+}
+
+
+/* ---------------------------- */
+/*        Pie de pagina */
+/* ---------------------------- */
+footer {
+    background: linear-gradient(to right, #1c3846, #1e5371);
+    width: 90%;
+    height: 60px;
+    padding-top: 25px;
+    padding-left: 60px;
+    padding-right: 50px;
+}
+
+.enlaces{
+    width: 80%;
+    margin-left: 5%;
+    margin-right: 50%;
+}
+
+.pie {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: justify;
+}
+  
+.elemento {
+    margin: 0 ;
+    width: 70px;
+    text-align: end;
+    line-height: 1.2;
+}
+  
+.elem {
+    margin: 0px;
+    margin-top: 10px;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 12px;
+}

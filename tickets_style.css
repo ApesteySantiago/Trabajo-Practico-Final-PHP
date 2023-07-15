@@ -1,0 +1,684 @@
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 65px; /* Altura deseada del encabezado */
+    padding: 0 20px; /* Espaciado interno deseado */
+    background-color: #353a40; /* Color de fondo deseado */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra deseada */
+    z-index: 9999; /* Asegura que el encabezado esté en la capa superior */
+    padding: 0 70px;
+    
+}/* ---------------------------- */
+/*        Menu superior */
+/* ---------------------------- */
+
+.menu-chico{
+    display: none;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+  
+nav li {
+    margin-left: 20px;
+    flex-basis: calc(33.33% - 10px);
+    white-space: nowrap; /* Evita que el texto se divida en varias líneas */
+    margin-bottom: 10px;
+}
+
+nav a {
+    text-decoration: none; /* quita el subrayado */
+    color: #fff; /* cambia el color de los enlaces a blanco */
+}
+
+.label_menu {
+    font-size: large;
+    color: #ffffff;
+}
+
+.compra a {
+    color: #6eb23f;
+}
+
+.inactivo a {
+    color: #929697;
+}
+
+/* ---------------------------- */
+/*            Venta             */
+/* ---------------------------- */
+
+#venta{
+    display: inline-block;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 60px ;
+    padding: 30px;
+}
+
+.descuento{
+    display: flex;
+}
+
+.box1{
+    width: 220px; 
+    height: 180px; 
+    background-color: white; 
+    margin-right: 5px;
+    border: 2px solid #409cff; 
+}
+
+.box2{
+    width: 220px; 
+    height: 180px; 
+    background-color: white; 
+    margin-right: 5px;
+    border: 2px solid #49b1c2; 
+}
+
+.box3{
+    width: 220px; 
+    height: 180px; 
+    background-color: white; 
+    margin-right: 5px;
+    border: 2px solid #f7c83d; 
+}
+
+.contenido{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    flex-direction: column;
+}
+
+.contenido p{
+    margin: 5px 0;
+}
+
+#p1{
+    font-size: 18px;
+}
+
+#p2{
+    font-weight: bold;
+}
+
+#p3{
+    font-size: 14px;
+    color: #b8bb92;
+}
+
+.box:last-child {
+    margin-right: 0;
+}
+
+/* ---------------------------- */
+/*      Seccion Formulario    */
+/* ---------------------------- */
+
+.centered-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+  }
+  
+  .small-text {
+    font-size: 12px;
+  }
+  
+  .big-text {
+    margin-top: -8px;
+    margin-bottom: 15px;
+
+    font-size: xx-large;
+    font-weight: 500;
+  }
+  
+  .form-row {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-bottom: 10px;
+    color: black;
+  }
+  
+  .form-group {
+    margin: 0;
+    text-align: left;
+  }
+
+  .nombree{
+    width: 328px; 
+    height: 40px;
+
+  }
+
+  .apellidoo{
+    width: 328px; 
+    height: 40px; 
+    margin-left: 5px;
+  }
+
+  .emaill{
+    width: 665px; 
+    height: 40px; 
+    margin-top: 20px;
+  }
+
+  #categoria{
+    width: 328px; 
+    height: 40px;
+  }
+
+  #cantidad{
+    width: 328px; 
+    height: 40px; 
+    margin-right: 5px;
+  }
+
+
+  .total-message {
+    margin-top: 10px;
+    font-weight: bold;
+  }
+  
+  .btn {
+    background-color: green;
+    color: white;
+  }
+
+  #borrar-btn{
+    width: 328px; 
+    height: 40px; 
+    margin-right: 5px ; 
+    background-color: #97c93e;
+  }
+
+  #resumen-btn{
+    width: 328px; 
+    height: 40px; 
+    margin-left: 5px; 
+    background-color: #97c93e;
+  }
+
+  #comprar-btn{
+    width: 665px; 
+    height: 40px; 
+    margin-left: 0px; 
+    margin-bottom: 10px;
+    background-color: #2596be;
+  }
+  
+/* ---------------------------- */
+/*          Ajustes */
+/* ---------------------------- */
+
+
+#total-msg {
+    text-align: start;
+    margin-left: 0px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding: 13px;
+    padding-left: 22px;
+
+    background-color: #cce5ff;
+    border: 1px solid #b6d9fc;
+    border-radius: 5px;
+
+    font-size: medium;
+    font-weight: 490;
+    color: #2964b3;
+}
+
+
+/* ---------------------------- */
+/*        Pie de pagina */
+/* ---------------------------- */
+footer {
+    background: linear-gradient(to right, #1c3846, #1e5371);
+    width: 100%;
+    height: 80px;
+    padding-top: 25px;
+    padding-left: 60px;
+    padding-right: 50px;
+}
+
+.enlaces{
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 50%;
+}
+
+.pie {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: justify;
+}
+  
+.elemento {
+    margin: 0 ;
+    width: 70px;
+    text-align: end;
+    line-height: 1.2;
+}
+  
+.elem {
+    margin: 0px;
+    margin-top: 10px;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 12px;
+}
+
+@media screen and (min-width: 1441px){
+    .nombree{
+        width: 325px;
+        height: 40px;
+    }
+
+    .apellidoo{
+        width: 325px;
+        height: 40px;
+    }
+
+    .emaill{
+        width: 660px;
+        height: 40px;
+    }
+
+    #cantidad{
+        width: 325px;
+        height: 40px;
+    }
+
+    #categoria{
+        width: 325px;
+        height: 40px;
+    }
+}
+
+@media (max-width: 768px){
+    header{
+        padding: 10;
+        font-size: 12px;
+    }
+
+    .nombree{
+        width: 325px;
+        height: 40px;
+    }
+
+    .apellidoo{
+        width: 325px;
+        height: 40px;
+    }
+
+    .emaill{
+        width: 660px;
+        height: 40px;
+    }
+
+    #cantidad{
+        width: 325px;
+        height: 40px;
+    }
+
+    #categoria{
+        width: 325px;
+        height: 40px;
+    }
+}
+
+@media (max-width: 425px){
+
+    header{
+        padding: 0;
+        margin: 0;
+        width: 425px;
+    }
+    .label-menu{
+        white-space: nowrap;
+        margin-left: 10px;
+        width: 50px;
+    }
+    .menu{
+        display: none;
+    }
+    .menu-chico{
+        display: block;
+
+        margin-left: 20px;
+        margin-right: 20px;
+        text-decoration: none;
+        list-style: none;
+    }
+    .menu.chi {
+        font-size: 50px;
+    }
+
+    .descuento{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .box2{
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .form-row{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .aux1{
+        display: flex;
+        flex-direction: row ;
+    }
+
+    .nombree{
+        width: 180px;
+        height: 40px;
+    }
+
+    .apellidoo{
+        margin-right: 10px;
+        width: 180px;
+        height: 40px;
+    }
+
+    .emaill{
+        margin-top: 0px;
+        margin-left: 0px;
+        width: 370px;
+        height: 40px;
+    }
+
+    #cantidad{
+        width: 180px;
+        height: 40px;
+        margin-left: -5px;
+        translate: 5px;
+    }
+
+    #categoria{
+        width: 180px;
+        height: 40px;
+        margin-left: 5px;
+        
+    }
+ 
+    #total-msg{
+        width: 370px;
+        margin-left: 0px;
+    }
+
+    .aux{
+        display: flex;
+        flex-direction: row;
+    }
+
+    #borrar-btn {
+        width: 180px;
+        height: 40px;
+        margin-right: 10px;
+        margin-left: 0px;
+    }
+
+    #resumen-btn{
+        width: 180px;
+        height: 40px;
+        margin-left: 0px;
+        margin-top: 0px;
+    }
+
+    footer{
+        padding: 0;
+        margin: 0;
+    }
+
+    .pie{
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width: 375px){
+
+    header{
+        padding: 0;
+        margin: 0;
+        width: 375px;
+    }
+    .label-menu{
+        white-space: nowrap;
+        margin-left: 10px;
+        width: 50px;
+    }
+    .menu{
+        display: none;
+    }
+    .menu-chico{
+        display: block;
+
+        margin-left: 20px;
+        margin-right: 20px;
+        text-decoration: none;
+        list-style: none;
+    }
+    .menu.chi {
+        font-size: 50px;
+    }
+
+    .descuento{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .box2{
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .form-row{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .nombree{
+        width: 330px;
+        height: 40px;
+    }
+
+    .apellidoo{
+        margin-right: 10px;
+        margin-top: 10px;
+        width: 330px;
+        height: 40px;
+    }
+
+    .emaill{
+        margin-top: 0px;
+        margin-left: 10px;
+        width: 330px;
+        height: 40px;
+    }
+
+    #cantidad{
+        width: 330px;
+        height: 40px;
+        margin-left: -5px;
+        translate: 5px;
+    }
+
+    #categoria{
+        width: 330px;
+        height: 40px;
+        margin-left: -5px;
+        
+    }
+ 
+    #total-msg{
+        width: 330px;
+        margin-left: 10px;
+    }
+
+    .aux{
+        display: flex;
+        flex-direction: row;
+    }
+
+    #borrar-btn {
+        width: 160px;
+        height: 40px;
+        margin-right: 10px;
+        margin-left: 10px;
+    }
+
+    #resumen-btn{
+        width: 160px;
+        height: 40px;
+        margin-left: 0px;
+        margin-top: 0px;
+    }
+
+
+    footer{
+        padding: 0;
+        margin: 0;
+    }
+
+    .pie{
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width: 320px){
+
+    header{
+        padding: 0;
+        margin: 0;
+        width: 320px;
+    }
+    .label-menu{
+        white-space: nowrap;
+        margin-left: 10px;
+        width: 50px;
+    }
+    .menu{
+        display: none;
+    }
+    .menu-chico{
+        display: block;
+        margin-left: 20px;
+        margin-right: 20px;
+        text-decoration: none;
+        list-style: none;
+    }
+    .menu.chi {
+        font-size: 50px;
+    }
+
+    .descuento{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .box2{
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .form-row{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .nombree{
+        width: 300px;
+        height: 40px;
+    }
+
+    .apellidoo{
+        margin-right: 10px;
+        margin-top: 10px;
+        width: 300px;
+        height: 40px;
+    }
+
+    .emaill{
+        margin-top: 0px;
+        margin-left: 10px;
+        width: 300px;
+        height: 40px;
+    }
+
+    #cantidad{
+        width: 300px;
+        height: 40px;
+        margin-left: -5px;
+        translate: 5px;
+    }
+
+    #categoria{
+        width: 300px;
+        height: 40px;
+        margin-left: -5px;
+        
+    }
+ 
+    #total-msg{
+        width: 300px;
+        margin-left: 10px;
+    }
+
+    .aux{
+        display: flex;
+        flex-direction: row;
+    }
+
+    #borrar-btn {
+        width: 145px;
+        height: 40px;
+        margin-right: 10px;
+        margin-left: 10px;
+    }
+
+    #resumen-btn{
+        width: 145px;
+        height: 40px;
+        margin-left: 0px;
+        margin-top: 0;
+    }
+
+    footer{
+        padding: 0;
+        margin: 0;
+    }
+
+    .pie{
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+}
